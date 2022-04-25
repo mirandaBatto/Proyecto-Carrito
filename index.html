@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARRITO</title>
+</head>
+<body>
+    
+    <div>
+        <img src="img/logo.jpg" alt="logo" width="200">
+        <nav>
+            <a href="#">Iniciar sesión</a>
+            <a href="#">Contacto</a>
+        </nav>
+
+        <div id="carrito">
+            <table >
+                <thead>
+                    <tr>
+                        <td>Producto</td>
+                        <td>Precio</td>
+                        <td>Cantidad</td>
+                    </tr>
+                </thead>
+                <tbody></tbody> <!--aca van los elementos que se agregan al carrito -->
+                <tfoot>
+                    <tr>
+                        <td>TOTAL:</td>
+                        <td id="total"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <a href="#" id="vaciar-carrito">VACIAR CARRITO</a>
+        </div><!-- end div carrito -->
+    </div> <!-- end div encabezado -->
+
+    <div id="lista-frutas">
+        <div  class="fruta" id="1">
+            <img src="img/manzana.jpg" alt="" width="150" >
+            <div>
+                <h4 class="titulo">MANZANA</h4>
+                <p class="precio">200</p>
+            </div>
+            <button class="agregar-carrito" data-id="1">Agregar al carrito</button>
+        </div>
+        <div class="fruta" id="2">
+            <img src="img/kiwi.jpg" alt="" width="150" >
+            <div>
+                <h4 class="titulo">KIWI</h4>
+                <p class="precio">400</p>
+            </div>
+            <button class="agregar-carrito" data-id="2">Agregar al carrito</button>
+        </div>
+        <div class="fruta" id="3">
+            <img src="img/banana.jpg" alt="" width="150">
+            <div>
+                <h4 class="titulo">BANANA</h4>
+                <p class="precio">250</p>
+            </div>
+            <button class="agregar-carrito" data-id="3">Agregar al carrito</button>
+        </div>
+        <!-- end lista frutas -->
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
